@@ -10,12 +10,14 @@ struct student{
 
 int main(){
     int n,i,j;
-    struct student s[4], temp;
+    struct student s[1000], temp;
 
 
+    printf("Of How many students do you want yo input data?\n");
+    scanf("%d",&n);
     for(i=0;i<n;i++){
         s[i].tm=0;
-        printf("Student %d:\n",i+1);
+        printf("\nStudent %d:\n",i+1);
         printf("Name:\t");
         scanf("%s",&s[i].name);
         printf("Roll:\t");
@@ -43,9 +45,9 @@ int main(){
         printf("Name:\t%s\n",s[i].name);
         printf("Roll:\t%d\n",s[i].roll);
         for(j=0;j<3;j++){
-            printf("Subject %d mark: %f\n",j+1,s[i].marks[j]);
+            printf("Subject %d mark: %0.3f\n",j+1,s[i].marks[j]);
         }
-         printf("Total Mark:\t%f\n\n",s[i].tm);
+         printf("Total Mark:\t%0.3f\n\n",s[i].tm);
     }
 
 
