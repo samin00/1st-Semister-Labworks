@@ -3,7 +3,7 @@
 #include<string.h>
 int main(){
     char fn[32] ,sn[32], tn[32],n[94];
-    int i,j,k;
+    int i,j;
 
     printf("Enter your first name:\t");
     scanf("%31s",fn);
